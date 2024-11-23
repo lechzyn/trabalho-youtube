@@ -1,0 +1,148 @@
+html,body{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicial{
+    display: flex;
+    flex-direction: row;
+    margin: 5px
+}
+
+.inicial h2{
+    margin-left: 2px;
+}
+
+.conteudo{
+    width: 800px;
+}
+
+.conteudo .ytb{
+    width: 60px;
+    fill: red;
+}
+
+.telapreta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    width: 800px;
+    height: 400px;
+    border-radius: 5px;
+    border-bottom: 3px solid red;
+}
+
+.telapreta:hover .ghostop,.telapreta:hover .ghostmid, .telapreta:hover .ghostbot{
+    visibility: visible;
+}
+
+.ghostop button, .ghostmid button , .ghostbot button{
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ghostop,.ghostmid,.ghostbot{
+    position: absolute;
+    fill: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.ghostop{
+    right: 20px;
+    top: 20px;
+}
+
+.ghostop svg{   
+    width: 30px;
+    height: 30px;
+}
+
+.chromecast,.cc,.settings{
+    height: 50px;
+    width: 50px;
+}
+
+.ghostbot{
+    right: 20px;
+    bottom: 15px;
+}
+
+.voltar,.adiantar,.fullscreen{
+    height: 50px;
+    width: 50px;
+}
+
+.play{
+    height: 80px;
+    width: 80px;
+}
+
+.ghostmid svg{
+    width: 30px;
+    height: 30px;
+}
+
+.ghostmid .play svg{
+    width: 50px;
+    height: 50px;
+}
+
+.ghostbot svg{
+    height: 25px;
+    width: 25px;
+}
+
+.ghostbot svg,.ghostmid svg, .ghostop svg{
+    padding: 5px;
+}
+
+.tituloelike{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.like svg{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.like span{
+    font-weight: bold;
+}
+
+.like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    margin: 15px;
+    fill: white;
+    color: white;
+    background-color: black;
+    height: fit-content;
+    border-radius: 30px;
+}
+
+.ghostbot button:hover , .ghostop button:hover , .ghostmid button:hover{
+    background-color: gray;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
